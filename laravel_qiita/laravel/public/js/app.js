@@ -1927,11 +1927,16 @@ __webpack_require__.r(__webpack_exports__);
     initialIsLikedBy: {
       type: Boolean,
       "default": false
+    },
+    initialCountLikes: {
+      type: Number,
+      "default": 0
     }
   },
   data: function data() {
     return {
-      isLikedBy: this.initialIsLikedBy
+      isLikedBy: this.initialIsLikedBy,
+      countLikes: this.initialCountLikes
     };
   }
 });
@@ -19645,7 +19650,7 @@ var render = function() {
         })
       ]
     ),
-    _vm._v("\n  10\n")
+    _vm._v("\n  " + _vm._s(_vm.countLikes) + "\n")
   ])
 }
 var staticRenderFns = []
