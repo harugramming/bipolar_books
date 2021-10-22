@@ -61,32 +61,13 @@ class User extends Authenticatable
             ? (bool)$this->followers->where('id', $user->id)->count()
             : false;
     }
-    public function follow(Request $request, string $name)
+    public function getCountFollowersAttribute(): int
     {
-        $user = User::where('name', $name)->first();
-
-        if ($user->id === $request->user()->id)
-        {
-            return abort('404', 'Cannot follow yourself.');
-        }
-
-        $request->user()->followings()->detach($user);
-        $request->user()->followings()->attach($user);
-
-        return ['name' => $name];
+        return $this->followers->count();
     }
 
-    public function unfollow(Request $request, string $name)
+    public function getCountFollowingsAttribute(): int
     {
-        $user = User::where('name', $name)->first();
-
-        if ($user->id === $request->user()->id)
-        {
-            return abort('404', 'Cannot follow yourself.');
-        }
-
-        $request->user()->followings()->detach($user);
-
-        return ['name' => $name];
+        return $this->followings->count();
     }
 }
