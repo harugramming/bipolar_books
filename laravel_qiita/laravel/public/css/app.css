@@ -2,26 +2,33 @@ body {
   background-color: #000;
 }
 
+body .navguest {
+  box-shadow: none !important;
+  background: none !important;
+}
+
 body .welcome {
-  height: 520px;
+  height: 600px;
+  margin-top: -56px;
+  display: flex;
+  align-items: center;
   width: 100%;
   background-color: #1E00FF;
   background-image: url(/images/geometry2.png?8b9eb18dd056013d16b945613a1ca86f);
   background-blend-mode: multiply;
   background-position: 0px 0px;
   -webkit-mask-position-x: 0px;
-  align-items: center;
   padding: 104px 24px 64px;
 }
 
-body .welcome .welcome-main {
+body .welcome .welcome-inner-main {
   font-weight: bold;
   font-feature-settings: "palt";
   color: #fff;
   font-size: 32px;
 }
 
-body .welcome .welcome-discription {
+body .welcome .welcome-inner-discription {
   color: #fff;
   font-size: 18px;
   width: 100%;

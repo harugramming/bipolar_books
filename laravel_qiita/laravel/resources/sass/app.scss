@@ -1,24 +1,29 @@
 body{
     background-color: #000;
+    .navguest{
+        box-shadow:none !important;
+        background: none !important;
+    }
     .welcome{
-        height: 520px;
+        height: 600px;
+        margin-top: -56px;
+        display:flex;
+        align-items: center;
         width:100%;
         background-color:#1E00FF;
         background-image:url("imgs/geometry2.png");
         background-blend-mode: multiply;
         background-position: 0px -0px;
         -webkit-mask-position-x: -0px;
-
-        align-items: center;
         padding: 104px 24px 64px;
 
-        .welcome-main{
+        .welcome-inner-main{
             font-weight: bold;
             font-feature-settings: "palt";
             color: #fff;
             font-size: 32px;
         }
-        .welcome-discription{
+        .welcome-inner-discription{
             color: #fff;
             font-size: 18px;
             width: 100%;
