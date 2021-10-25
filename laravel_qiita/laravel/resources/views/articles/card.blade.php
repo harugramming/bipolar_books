@@ -66,7 +66,7 @@
         </a>
       </h3>
       <div class="card-text">
-        {!! nl2br(e( $article->body )) !!}
+        {!! nl2br(e( Str::limit($article->body, 64) )) !!}
       </div>
     </div>
     <div class="card-body pt-0 pb-2 pl-3">
