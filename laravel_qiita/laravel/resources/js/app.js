@@ -1,5 +1,5 @@
-import './jquery'
 import './bootstrap'
+import $ from 'jquery'
 import './tabs'
 import Vue from 'vue'
 import ArticleLike from './components/ArticleLike'
