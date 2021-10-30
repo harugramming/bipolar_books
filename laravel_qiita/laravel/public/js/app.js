@@ -43996,22 +43996,9 @@ __webpack_require__.r(__webpack_exports__);
   !*** ./resources/js/tabs.js ***!
   \******************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-/* WEBPACK VAR INJECTION */(function($) {$('.tab-content>div').hide();
-$('.tab-content>div').first().slideDown();
-$('.tab-buttons span').click(function () {
-  var thisclass = $(this).attr('class');
-  $('#lamp').removeClass().addClass('#lamp').addClass(thisclass);
-  $('.tab-content>div').each(function () {
-    if ($(this).hasClass(thisclass)) {
-      $(this).fadeIn(800);
-    } else {
-      $(this).hide();
-    }
-  });
-});
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js")))
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: ENOENT: no such file or directory, open '/var/www/html/resources/js/tabs.js'");
 
 /***/ }),
 

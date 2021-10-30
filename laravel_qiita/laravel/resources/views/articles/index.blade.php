@@ -23,6 +23,7 @@
         <div class='tab-content'>
 
             <div class="container　content1">
+                テスト
                 @foreach($articles as $article)
                 @include('articles.card')
                 @endforeach
